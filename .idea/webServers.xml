@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="567de98d-0973-47ab-b70a-8e983746434e" name="multijeux" url="http://multijeux.projetisi.com">
+        <fileTransfer host="multijeux.projetisi.com" port="21" password="dfc7dfdfdfc6dfdedfc3dfc0dfcfdfdfdfd2" username="multijeux">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
