@@ -1,0 +1,38 @@
+#header img{
+    margin-left: 2%;
+    width:15%;
+}
+#header h2{
+    display: inline-block;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    margin-left: 2%;
+    width:15%;
+}
+
+#header p{
+    margin-left: 2%;
+    width:15%;
+}
+
+#header{
+    position: relative;
+    background-color: #0e9aff;
+    width: 100%;
+}
+
+#jeu {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cartes{
+    display: inline-block;
+    width: auto;
+}
+
+.cartes img{
+    width: 40%;
+}
