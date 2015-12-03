@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Calcul Rapide</title>
+
+    <style>
+        ul {
+            padding:0;
+        }
+
+        li {
+            text-decoration:none;
+            list-style:none;
+            margin-top:1%;
+            text-align:center;
+            font-weight:bold;
+            width:20%;
+            margin-right:auto;
+            margin-left:auto;
+        }
+
+        .hoverliste:hover {
+            color:red;
+            cursor:pointer;
+        }
+
+        ul > li:first-child {
+            margin-top:3%;
+        }
+
+        h1 {
+            text-align:center;
+            font-size:200%;
+            color:blue;
+        }
+
+
+        h1 + p {
+            margin:0;
+            font-size:120%;
+            margin-top:2%;
+            text-align:center;
+            font-weight:bold;
+        }
+
+       #op_arithmetique {
+           display:inline-block;
+           font-size:150%;
+       }
+
+
+        input[type="text"] {
+            margin-top:0;
+            padding:0;
+            width:35px;
+            height:16px;
+        }
+
+       #en_accord {
+           margin-left:44.5%;
+       }
+
+        #output {
+            text-align:center;
+            color:red;
+            font-size:150%;
+            font-weight:bold;
+        }
+
+        #question {
+            display:inline-block;
+            font-size:150%;
+        }
+    </style>
+
+</head>
+<body>
+<div id="status"></div>
+<h1>Calcul Rapide</h1>
+<p id="parag_instruction"></p>
+<ul>
+    <li><p id="op_arithmetique"></p>
+        <p id="question"></p>
+        <input type="text" id="reponse" name="reponse" /></li>
+</ul>
+<input type="button" id="en_accord" name="en_accord" value="Recommencer"/>
+<input type="button" id="en_desaccord" name="en_desaccord" value="Terminer"/>
+<p id="output"></p>
+<ul>
+    <li id="debutant" class="hoverliste">Débutant</li>
+    <li id="intermediaire" class="hoverliste">Intermédiaire</li>
+    <li id="avance" class="hoverliste">Avancé</li>
+</ul>
+<script src="script/lib_calcul_rapide.js"></script>
+<script src="script/calcul_rapide.js"></script>
+</body>
+</html>
