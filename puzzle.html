@@ -5,13 +5,15 @@
     <title>puzzle</title>
     <link rel="stylesheet" href="css/style_puzzle.css"/>
 
+
 </head>
 
 
 <body>
-<!--<script src = "script/lib.js"></script>
-<script src = "script/main.js"></script>-->
+<script src = "script/lib.js"></script>
+<script src = "script/main.js"></script>
 
+<!--
 <script>
 
     "use strict";
@@ -33,15 +35,15 @@
     }
 
 
-    document.addEventListener('DOMContentLoaded', function demarrer() {
-        //declaration d'une variable qui definit un tableau correspondant au tableau initiale
+   document.addEventListener('DOMContentLoaded', function demarrer() {
+    //declaration d'une variable qui definit un tableau correspondant au tableau initiale
 
 
 
         var tab_init = new Array("1.png", "2.png", "3.png", "4.png", "5.png", "6.png"
-                , "7.png", "8.png", "9.png", "10.png", "11.png", "vide.png");
+            , "7.png", "8.png", "9.png", "10.png", "11.png", "vide.png");
 
-        //declaration d'un tableau qui prendra les mofications du tableau initiale de 12 cases
+    //declaration d'un tableau qui prendra les mofications du tableau initiale de 12 cases
 
         var tab_mod = [];
         function win(){
@@ -54,38 +56,40 @@
 
                 else{
 
-                    return true;
-                }
+                return true;
+                 }
 
             }
         }
-        //declaration dune fonction qui renvoi un chiffre aleatoire
-        function chiffre_aleatoire(){
+    //declaration dune fonction qui renvoi un chiffre aleatoire
+    function chiffre_aleatoire(){
 
-            var j;
-            while (tab_init.length>0)
-            {
-                j = Math.round(Math.random()*(tab_init.length-1));
-                console.log(j);
-                tab_mod.push(tab_init[j]);
-                console.log('tab mod',tab_mod);
-                tab_init.splice(j,1);
-                console.log('tab_init', tab_init);
-            }
+        var j;
+        while (tab_init.length>0)
+        {
+            j = Math.round(Math.random()*(tab_init.length-1));
+            console.log(j);
+            tab_mod.push(tab_init[j]);
+            console.log('tab mod',tab_mod);
+            tab_init.splice(j,1);
+            console.log('tab_init', tab_init);
+        }
 
-            for(var i = 0; i<tab_mod.length; i++)
-            {
-                console.log('lecture_aleatoire affichage tablo melang');
-                document.images[i].src = tab_mod[i];
-                if(tab_mod[i]=='vide.png'){
-                    posVide=i+1;
+        for(var i = 0; i<tab_mod.length; i++)
+        {
+            console.log('lecture_aleatoire affichage tablo melang');
+            document.images[i].src = tab_mod[i];
+            if(tab_mod[i]=='vide.png'){
+                posVide=i+1;
 
-                }
             }
         }
+    }
 
         document.getElementById('melange').addEventListener('click', chiffre_aleatoire);
-
+        var table = document.querySelectorAll("td")
+        table.addEventListener("click",change);
+        
         if(win()){
             var str = '<img src =="messagefinall.png">';
 
@@ -94,16 +98,24 @@
             document.getElementById('envoyer').innerHTML ="";
         }
 
+    document.getElementById("solution").addEventListener("click",function(){
+        console.log('function solution');
+        for(var i = 0; i<tab_init.length; i++)
+        {
+            console.log('function solution');
+            document.images[i].src = tab_init[i];
 
+        }
+    });
 
     });
 
 </script>
+-->
 
+<div id="div_un">
 
-<div>
-
-    <table>
+    <table id="idtable">
         <tr>
             <td><a href="#" onclick="change(1)" id="id1" ><img src="1.png " alt="" /></a></td>
             <td><a href="#" onclick="change(2)" id="id2"><img src="2.png" alt="" /></a></td>
@@ -124,31 +136,32 @@
             <td><a href="#" onclick="change(11)" id="id11"><img src="11.png " alt="" /></a></td>
             <td><a href="#" onclick="change(12)" id="id12"><img src="vide.png " alt="" /></a></td>
         </tr>
-        <!--<td><a href="#"  id="id1" ><img src="1.png " alt="" /></a></td>
-        <td><a href="#"  id="id2"><img src="2.png" alt="" /></a></td>
-        <td><a href="#"  id="id3" ><img src="3.png " alt="" /></a></td>
-        <td><a href="#"  id="id4" ><img src="4.png " alt="" /></a></td>
-    </tr>
 
-    <tr>
-        <td><a href="#" id="id5"><img src="5.png " alt="" /></a></td>
-        <td><a href="#" id="id6"><img src="6.png " alt="" /></a></td>
-        <td><a href="#" id="id7" ><img src="7.png " alt="" /></a></td>
-        <td><a href="#" id="id8" ><img src="8.png " alt="" /></a></td>
-    </tr>
+        <!--<td><a href="#"  id="id1" ><img src="1.png " alt="" /></a></td>-->
+        <!--<td><a href="#"  id="id2"><img src="2.png" alt="" /></a></td>-->
+        <!--<td><a href="#"  id="id3" ><img src="3.png " alt="" /></a></td>-->
+        <!--<td><a href="#"  id="id4" ><img src="4.png " alt="" /></a></td>-->
+        <!--</tr>-->
 
-    <tr>
-        <td><a href="#" id="id9"><img src="9.png " alt="" /></a></td>
-        <td><a href="#" id="id10"><img src="10.png " alt="" /></a></td>
-        <td><a href="#" id="id11"><img src="11.png " alt="" /></a></td>
-        <td><a href="#" id="id12"><img src="vide.png " alt=""/></a></td>
-    </tr>
--->
+        <!--<tr>-->
+        <!--<td><a href="#" id="id5"><img src="5.png " alt="" /></a></td>-->
+        <!--<td><a href="#" id="id6"><img src="6.png " alt="" /></a></td>-->
+        <!--<td><a href="#" id="id7" ><img src="7.png " alt="" /></a></td>-->
+        <!--<td><a href="#" id="id8" ><img src="8.png " alt="" /></a></td>-->
+        <!--</tr>-->
+
+        <!--<tr>-->
+        <!--<td><a href="#" id="id9"><img src="9.png " alt="" /></a></td>-->
+        <!--<td><a href="#" id="id10"><img src="10.png " alt="" /></a></td>-->
+        <!--<td><a href="#" id="id11"><img src="11.png " alt="" /></a></td>-->
+        <!--<td><a href="#" id="id12"><img src="vide.png " alt=""/></a></td>-->
+        <!--</tr>-->
     </table>
 
     <form action="post">
         <input type="button" name="lecture" id="melange" value="Lecture aleatoire" />
         <input type="button" name="soumettre" id="envoyer" value="Soumettre" />
+        <input type="button" name="solution" id="solution" value="Resolution avance" />
 
     </form>
 
