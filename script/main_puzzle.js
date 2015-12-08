@@ -34,7 +34,7 @@ function change(str) {
 
     if((str==posVide-1) || (str==posVide-4)   || (str==posVide+1)  || (str==posVide+4) ) {
        // console.log("str apres",str);
-//knh
+
         var idCurrent=   document.getElementById('id'+str).innerHTML;
         //console.log("idcurrent avan",idCurrent);
         var idVide=document.getElementById('id'+posVide).innerHTML;
