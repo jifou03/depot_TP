@@ -39,6 +39,15 @@ document.addEventListener("DOMContentLoaded",function(){
         console.log(this);
     });
 
+    $("#refresh").click(function(){
+        window.location.assign("http:multijeux.projetisi.com/memoire.html");
+        console.log("http:multijeux.projetisi.com/memoire.html")
+    });
+
+    $("#back").click(function(){
+        window.location.assign("http://multijeux.projetisi.com/index.html");
+        console.log("http://multijeux.projetisi.com/index.html")
+    });
 
 
 });
