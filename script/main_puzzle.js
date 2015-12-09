@@ -26,7 +26,7 @@ function win() {
         }
 
         regarder();
-        //
+
     }
 }
 
