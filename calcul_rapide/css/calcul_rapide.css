@@ -1,0 +1,99 @@
+ul {
+    padding:0;
+}
+
+#wrapper {
+    width:80%;
+    margin:0 auto;
+    text-align:center;
+}
+
+#status {
+    font-size:170%
+}
+
+body {
+    background-image:url("../images/brainwithsomeone.jpg");
+    background-repeat:repeat-x;
+    background-size:50%;
+    background-position:0 100px;
+}
+
+#parag_instruction {
+    width:20%;
+    margin:0 auto;
+    text-align:center;
+    font-size:115%;
+    margin-top:5%;
+    font-weight:bold;
+}
+
+li {
+    text-decoration:none;
+    list-style:none;
+    margin-top:1%;
+    text-align:center;
+    font-weight:bold;
+    width:20%;
+    margin-right:auto;
+    margin-left:auto;
+    font-size:150%;
+}
+
+.hoverliste:hover {
+    color:red;
+    cursor:pointer;
+}
+
+ul > li:first-child {
+    margin-top:3%;
+}
+
+h1 {
+    text-align:center;
+    font-size:250%;
+    background-color:#FE4C32;
+    width:40%;
+    color:white;
+    margin:0 auto;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+
+h1 + p {
+    margin:0;
+    font-size:120%;
+    margin-top:2%;
+    text-align:center;
+    font-weight:bold;
+}
+
+#op_arithmetique {
+    display:inline-block;
+    font-size:110%;
+    width:170px;
+    color:#FE4C32;
+    padding:20px;
+}
+
+
+input[type="text"] {
+    margin-top:0;
+    padding:0;
+    width:50px;
+    height:15px;
+    border:2px solid black;
+}
+
+#output {
+    text-align:center;
+    color:red;
+    font-size:150%;
+    font-weight:bold;
+}
+
+#question {
+    display:inline-block;
+    font-size:150%;
+}
