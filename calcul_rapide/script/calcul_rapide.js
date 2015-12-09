@@ -17,8 +17,6 @@ var intermediaire;
 var avance;
 var is_wrong_answer = false;
 
-
-// chargement du DOM
 document.addEventListener("DOMContentLoaded", function demarrer () {
     debutant = document.getElementById('debutant');
     debutant.addEventListener('click', go);
@@ -36,8 +34,6 @@ document.addEventListener("DOMContentLoaded", function demarrer () {
     document.getElementById('parag_instruction').innerHTML = "Veuillez choisir le niveau et soyez prêt à calculer!! ";
 });
 
-
-// fonction que lorsque l'utilisateur décide de rejouer
     document.getElementById('en_accord').addEventListener('click', function (){
             wrong_answer = 0;
             good_answer = 0;
@@ -59,10 +55,9 @@ document.addEventListener("DOMContentLoaded", function demarrer () {
             document.getElementById('parag_instruction').innerHTML = "Veuillez choisir le niveau et soyez prêt à calculer!! ";
     });
 
-// fonction qui exécute le décompte ainsi que le choix de l'utilisateur
     function go() {
 
-        temps = countDown(12, "status");
+        temps = countDown(40, "status");
 
         document.getElementById("reponse").addEventListener('keypress', enter);
 
@@ -89,7 +84,6 @@ document.addEventListener("DOMContentLoaded", function demarrer () {
 
 }
 
-// fonction débutant qui fait les opérations aléatoirement
 function debutant_fonction() {
 
     document.getElementById('parag_instruction').innerHTML = "";
@@ -105,7 +99,6 @@ function debutant_fonction() {
 
 }
 
-// fonction intermédiaire qui fait les opérations aléatoirement
 function intermediaire_fonction() {
 
     document.getElementById('parag_instruction').innerHTML = "";
@@ -122,7 +115,6 @@ function intermediaire_fonction() {
     result = eval(nb1 + op1 + nb2 + op2 + nb3);
 }
 
-// fonction avancé qui fait les opérations aléatoirement
 function avance_fonction() {
 
     document.getElementById('parag_instruction').innerHTML = "";
@@ -134,15 +126,15 @@ function avance_fonction() {
     var nb2 = parseInt((Math.round(10 + Math.random() * 10)));
     var nb3 = parseInt((Math.round(10 + Math.random() * 10)));
     var nb4 = parseInt((Math.round(10 + Math.random() * 10)));
-    var op_arithmetique = ("(" + " " + nb1 + op1 + nb2 + " " + ")" + " " + op2 + " " + "(" + " " + nb3 + op3 + nb4 + " " + ")");
-    document.getElementById("op_arithmetique").innerHTML = (" " + op_arithmetique);
+    var op_arithmetique = (nb1 + op1 + nb2 + op2 + nb3 + op3 + nb4);
+    document.getElementById("op_arithmetique").innerHTML = (op_arithmetique);
     document.getElementById('reponse').style.visibility = "visible";
 
-    result = eval((nb1 + op1 + nb2) + op2 + (nb3 + op3 + nb4));
+    result = eval(nb1 + op1 + nb2 + op2 + nb3 + op3 + nb4);
 
 }
 
-// fonction qui vérifie la réponse lorsque l'utilisateur pèse sur le bouton entré
+
 function enter () {
     reponse_utilisateur = parseInt(document.getElementById("reponse").value);
     if (window.event.keyCode == "13") {
