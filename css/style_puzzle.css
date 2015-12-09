@@ -1,19 +1,37 @@
+
+
+
 body > div {
     display: inline-block;
-    width:50% ;
+    width: 800px;
     height: 705px;
     margin-left: 19.2%;
     margin-right: 19.2%;
-    background-image: url("../arriereplan.png") ;
+    background-image: url("../image_puzzle/arriereplan.png") ;
     background-repeat: no-repeat;
-
+    /*height: 350px;*/
 }
 table{
     margin-left:  auto;
     margin-right:  auto;
     margin-bottom: 10%;
     margin-top: 10%;
+    border-collapse: collapse;
+    border: 0px solid black;
+    padding: 0px;
 
+}
+td,tr,tbody{
+    border-collapse: collapse;
+    border: 0px solid black;
+    padding: 0px;
+}
+td>a{
+    border: 0px solid black;
+    padding: 0px;
+    display: block;
+    height: 100px;
+    width: 125px;
 }
 form{
     display: inline-block;
@@ -23,15 +41,42 @@ form{
 }
 
 #envoyer{
-    width: 35%;
+    width: 30%;
     height: 40px;
     position: relative;
     left: 50%;
 }
 
 #melange{
-    width: 35%;
+    width: 30%;
     height: 40px;
     position: relative;
     right: 15%;
+}
+
+#solution{
+    width: 30%;
+    height: 40px;
+    position: relative;
+    left: 60%;
+    bottom : 80%;
+
+}
+
+
+#msg{
+    width: 600px;
+    height: 500px;
+    border: 5px solid white;
+    margin-left: 100px;
+    margin-right: 100px;
+    position: relative;
+    /*left: 75px;*/
+    top: 65px;
+}
+
+p>a{
+    position: relative;
+    left: 900px;
+   /* top: 200px;*/
 }
