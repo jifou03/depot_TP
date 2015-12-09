@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Calcul Rapide</title>
+    <link type="text/css" rel="stylesheet" href="css/calcul_rapide.css"/>
+
+</head>
+<body>
+<div id="status"></div>
+<h1>Calcul Rapide</h1>
+<div id="wrapper">
+<p id="parag_instruction"></p>
+<ul>
+    <li><p id="op_arithmetique"></p>
+        <p id="note_finale"></p>
+        <p id="question"></p>
+        <input type="text" id="reponse" name="reponse" /></li>
+</ul>
+<input type="button" id="en_accord" name="en_accord" value="Recommencer"/>
+<a href="../index.html"><input type="button" id="en_desaccord" name="en_desaccord" value="Retour au menu"/></a>
+<p id="output"></p>
+</div>
+<ul>
+    <li id="debutant" class="hoverliste">DÉBUTANT</li>
+    <li id="intermediaire" class="hoverliste">INTERMÉDIAIRE</li>
+    <li id="avance" class="hoverliste">AVANCÉ</li>
+</ul>
+<script src="script/lib_calcul_rapide.js"></script>
+<script src="script/calcul_rapide.js"></script>
+</body>
+</html>
