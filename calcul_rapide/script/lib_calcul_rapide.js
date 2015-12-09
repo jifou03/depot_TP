@@ -3,6 +3,7 @@
  */
 "use strict";
 
+//fonction qui fait le décompte
 function countDown (secs, elem) {
     var element = document.getElementById(elem);
     if (secs < 1) {
@@ -18,6 +19,7 @@ function countDown (secs, elem) {
     return temps;
 }
 
+// fonction lorsque le jeu est terminé
 function terminer () {
     document.getElementById("op_arithmetique").innerHTML = "Le temps est écoulé. Le test est terminé.";
     document.getElementById('reponse').style.visibility = "hidden";
