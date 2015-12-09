@@ -21,18 +21,38 @@
     background-color: #0e9aff;
     width: 100%;
 }
+#main{
+    align-content: center;
+    width: 100%;
+    position: relative;
+}
 
 #jeu {
-    width: 60%;
-    margin: 0 auto;
+    width: 90%;
+    position: relative;
+    height: 900px;
+    margin-left: 5%;
     text-align: center;
+    display: inline-block;
 }
 
 .cartes{
+    background: url("../images/memoire/carte_verso.jpg") no-repeat;
+    margin: 0 2%;
+    background-size: 100%;
+    width: 104px;
+    height: 208px;
+    position: relative;
     display: inline-block;
-    width: auto;
+
+}
+.cartes img{
+    width: 104px;
+    height: 208px;
+    position: relative;
+    visibility: hidden;
+
 }
 
-.cartes img{
-    width: 40%;
-}
+
+
