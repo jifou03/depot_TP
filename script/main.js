@@ -49,17 +49,6 @@ document.addEventListener("DOMContentLoaded",function(){
         console.log("http://multijeux.projetisi.com/index.html")
     });
 
-    $("#memoire").click(function(){
-        window.location.assign("http://multijeux.projetisi.com/memoire.html");
-        console.log("http://multijeux.projetisi.com/index.html")
-    });
-    $("#puzzle").click(function(){
-        window.location.assign("http://multijeux.projetisi.com/puzzle.html");
-        console.log("http://multijeux.projetisi.com/index.html")
-    });
-    $("#calcul").click(function(){
-        window.location.assign("http://multijeux.projetisi.com/calcul_rapide.html");
-        console.log("http://multijeux.projetisi.com/index.html")
-    })
+
 });
 
