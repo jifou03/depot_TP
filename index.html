@@ -14,7 +14,7 @@
         </div>
         <div>
             <h2>Veuillez vous identifier et sélectionner un jeu</h2>
-            <form>
+            <form id="formulaire_inscription" name="formulaire_inscription">
                 <p><input type="radio" title="sexe" name="sexe" value="M." checked>Garçon
                 <input type="radio" title="sexe" name="sexe" value="Mme">Fille</p>
                 <p><label>prénom</label></p>
@@ -153,7 +153,8 @@
                     <option value="2015">2015</option>
                 </select>
                 <div>
-                    <input type="submit" id="puzzle" name="jeu" value="Valider">
+                    <p id="validation"></p>
+                    <input type="submit" id="valider" name="jeu" value="Valider">
                     <a href="memoire.html"><input type="button" id="memoire" name="jeu" value="Mémoire"></a>
                     <a href="calcul_rapide.html"><input type="button" id="calcul" name="jeu" value="Calcul rapide"></a>
                         <a href="puzzle.html"><input type="button" id="puzzle" name="jeu" value="Casse-tête"></a>
